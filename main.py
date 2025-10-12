@@ -13,21 +13,21 @@ from aiohttp import web
 
 # Config 
 class Config(object):
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7979826252:AAG6PkktURFL-udAd3KipzwiFXp6FEQDbCg")
-    API_ID = int(os.environ.get("API_ID",  "23442913"))
-    API_HASH = os.environ.get("API_HASH", "864a97e16b4ff7dc65ff5e2d1549b4a2")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8391625712:AAGFgzg2FujGFPJeEp3BqbA5QaoBqdmMnbo")
+    API_ID = int(os.environ.get("API_ID",  "23433400"))
+    API_HASH = os.environ.get("API_HASH", "1a286620de5ffe0a7d9b57e604293555")
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     SESSIONS = "./SESSIONS"
 
-    AUTH_USERS = os.environ.get('AUTH_USERS', '7841326954').split(',')
+    AUTH_USERS = os.environ.get('AUTH_USERS', '6413237954').split(',')
     for i in range(len(AUTH_USERS)):
         AUTH_USERS[i] = int(AUTH_USERS[i])
 
-    GROUPS = os.environ.get('GROUPS', '-1002300391155').split(',')
+    GROUPS = os.environ.get('GROUPS', '-1003182485007').split(',')
     for i in range(len(GROUPS)):
         GROUPS[i] = int(GROUPS[i])
 
-    LOG_CH = os.environ.get("LOG_CH", "-1002381344447")
+    LOG_CH = os.environ.get("LOG_CH", "-1003182485007")
 
 # TelegramLogHandler is a custom handler which is inherited from an existing handler. ie, StreamHandler.
 logging.basicConfig(
